@@ -1,0 +1,11 @@
+.composition {
+    padding: 2.5rem;
+    height: 50rem;
+    overflow: hidden;
+    box-sizing: content-box;
+    &__photo {
+        
+        height: 50rem;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,22 @@
+.section-about {
+    background-color: $color-white;
+    padding: 25rem 0;
+    
+    &__content {
+        background-color: $color-grey-dark-2;
+        width: 100%;
+        overflow: hidden;
+
+        &--left {
+            width: 49%;
+            display: inline-block;
+        }
+    
+        &--right {
+            width: 49%;
+            display: inline-block;
+        }
+    }
+
+    
+}
