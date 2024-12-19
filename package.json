@@ -1,0 +1,18 @@
+{
+    "name": "transexcell",
+    "version": "1.0.0",
+    "description": "Webpage for the transporting bussiness Transexcell",
+    "main": "index.js",
+    "scripts": {
+      "compile:sass": "sass sass/main.scss css/style.css  -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "sass": "^1.83.0"
+    },
+    "dependencies": {
+      "live-server": "^1.2.2"
+    
+    }
+  }
