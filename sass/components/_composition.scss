@@ -1,11 +1,29 @@
 .composition {
-    padding: 2.5rem;
-    height: 50rem;
-    overflow: hidden;
-    box-sizing: content-box;
-    &__photo {
-        
+        padding: 2.5rem;
         height: 50rem;
-        background-size: cover;
-    }
+        width: 50rem;
+        background: linear-gradient(
+            to right bottom,
+            rgba($color-primary, 1)0%,
+            rgba($color-primary, 1)7%,
+            rgba($color-primary, 1)7%,
+            rgba($color-primary-light, 1)15%,
+            rgba($color-primary, 1)30%,
+            rgba($color-primary-dark, 1)50%,
+            rgba($color-primary, 1)70%,
+            rgba($color-primary-light, 1)85%,
+            rgba($color-primary, 1)100%
+    );
+    &__content {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+
+        &__photo {
+            max-height: 100%;
+        }
+    } 
+ 
+    
 }

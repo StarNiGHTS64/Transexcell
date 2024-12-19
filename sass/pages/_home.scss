@@ -1,11 +1,17 @@
 .section-about {
     background-color: $color-white;
     padding: 25rem 0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
     
     &__content {
-        background-color: $color-grey-dark-2;
-        width: 100%;
+        background-color: $color-white-pure;
+        border: 1px solid $color-primary;
+        margin: auto;
+        width: 50%;
         overflow: hidden;
+        display: block;
 
         &--left {
             width: 49%;
@@ -15,6 +21,7 @@
         &--right {
             width: 49%;
             display: inline-block;
+            transform: translateY(-20rem);
         }
     }
 
