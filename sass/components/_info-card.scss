@@ -1,0 +1,70 @@
+.info-card {
+    height: 60rem;
+    background-color: $color-white-pure;
+    box-shadow: 0 1rem 2rem rgba($color-black-pure, .15);
+    &--left {
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        transform: translateY(-10rem);
+        padding-left: 2rem;
+    }
+
+    &--right {
+        width: 49.5%;
+        height: 100%;
+        background-image: url(../img/nat-4.jpg);
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+    }
+
+    &__heading {
+        text-align: center;
+        color: $color-black-pure;
+        margin-bottom: 2rem;
+    }
+}
+
+.info-text {
+    &--main {
+        border: solid 4px;
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: $color-black;
+        line-height: 3rem;
+        padding: 0 5px;
+        margin-bottom: 1.5rem;
+        &--1 {
+            border-color: $color-primary-light;
+        }
+        &--2 {
+            border-color: $color-secondary-dark;
+        }
+        &--3 {
+            border-color: $color-tertiary-dark;
+        }
+    }
+
+    &--sub {
+        font-size: 2rem;
+        color: $color-black;
+        margin-left: 0.5rem;
+    }
+    
+    &__list {
+        list-style: none;
+        width: 80%;
+        padding: 1rem 3.5rem;
+        &--item {
+
+        }
+    }
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+}

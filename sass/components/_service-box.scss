@@ -1,9 +1,10 @@
 .service-box {
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 .5rem 2rem ;
     &__heading {
         padding: 10px 0;
-        background-color: $color-secondary-dark;
+        background-color: $color-tertiary;
     }
 
     &__picture {

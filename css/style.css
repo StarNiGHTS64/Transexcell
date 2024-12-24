@@ -68,7 +68,7 @@ body {
 }
 
 .heading-secondary {
-  color: #2C3694;
+  color: #F4E04D;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -76,13 +76,21 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
   background-image: linear-gradient(to right, #47953B, #223921);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.heading-quartiary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #17141F;
+  display: inline-block;
 }
 
 .paragraph {
@@ -117,7 +125,7 @@ body {
   padding: 2.5rem;
   height: 50rem;
   width: 50rem;
-  background: linear-gradient(to right bottom, #2f572c 0%, #2f572c 7%, #2f572c 7%, #47953b 15%, #2f572c 30%, #223921 50%, #2f572c 70%, #47953b 85%, #2f572c 100%);
+  background: linear-gradient(to right bottom, #123524 0%, #123524 7%, #123524 7%, #47953b 15%, #123524 30%, #223921 50%, #123524 70%, #47953b 85%, #123524 100%);
 }
 .composition__content {
   width: 100%;
@@ -126,16 +134,18 @@ body {
   display: block;
 }
 .composition__content__photo {
+  transform: translateX(-20rem) scaleX(-1);
   max-height: 100%;
 }
 
 .service-box {
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 0.5rem 2rem;
 }
 .service-box__heading {
   padding: 10px 0;
-  background-color: #FEDF00;
+  background-color: #2A628F;
 }
 .service-box__picture {
   height: 30rem;
@@ -144,9 +154,69 @@ body {
   background-position: right;
 }
 
+.info-card {
+  height: 60rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.info-card--left {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  transform: translateY(-10rem);
+  padding-left: 2rem;
+}
+.info-card--right {
+  width: 49.5%;
+  height: 100%;
+  background-image: url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.info-card__heading {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.info-text--main {
+  border: solid 4px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #17141F;
+  line-height: 3rem;
+  padding: 0 5px;
+  margin-bottom: 1.5rem;
+}
+.info-text--main--1 {
+  border-color: #47953B;
+}
+.info-text--main--2 {
+  border-color: #FEDF00;
+}
+.info-text--main--3 {
+  border-color: #2C3694;
+}
+.info-text--sub {
+  font-size: 2rem;
+  color: #17141F;
+  margin-left: 0.5rem;
+}
+.info-text__list {
+  list-style: none;
+  width: 80%;
+  padding: 1rem 3.5rem;
+}
+.info-text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 .header {
   height: 80vh;
-  background-image: linear-gradient(to right, rgba(44, 54, 148, 0.8), rgba(44, 54, 148, 0.2)), url(../img/nat-1.jpg);
+  background-image: linear-gradient(to right, rgba(42, 98, 143, 0.8), rgba(42, 98, 143, 0.2)), url(../img/nat-1.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -198,7 +268,7 @@ body {
 }
 
 .section-about {
-  background-color: #FFFAFA;
+  background-color: #FFFFFF;
   padding: 20rem 0;
   border-radius: 3px;
   overflow: hidden;
@@ -206,7 +276,7 @@ body {
 }
 .section-about__content {
   background-color: #FFFFFF;
-  border: 1px solid #2F572C;
+  border: 1px solid #123524;
   margin: auto;
   width: 50%;
   overflow: hidden;
@@ -222,6 +292,16 @@ body {
   transform: translateY(-20rem);
 }
 
+.section-services {
+  background-color: #FFFFFF;
+  padding: 20rem 0;
+}
+
+.section-coverage {
+  background-color: #FFFFFF;
+  padding: 20rem 0;
+}
+
 .section-divider {
   height: 20rem;
 }
@@ -235,15 +315,10 @@ body {
   transform: translateY(110%);
 }
 .section-divider--1 {
-  background-color: #FEDF00;
+  background-color: #F4E04D;
 }
 .section-divider--2 {
-  background-color: #2F572C;
-}
-
-.section-services {
-  background-color: #FFFFFF;
-  padding: 20rem 0;
+  background-color: #123524;
 }
 
 /*# sourceMappingURL=style.css.map */
