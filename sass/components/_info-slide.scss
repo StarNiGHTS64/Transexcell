@@ -1,12 +1,11 @@
-.info-card {
+.info-slide {
     height: 60rem;
-    background-color: $color-white-pure;
-    box-shadow: 0 1rem 2rem rgba($color-black-pure, .15);
+    background-color: $color-primary;
     &--left {
         width: 50%;
         height: 100%;
         display: inline-block;
-        transform: translateY(-10rem);
+        transform: translateY(-15rem);
         padding-left: 2rem;
     }
 
@@ -21,22 +20,23 @@
 
     &__heading {
         text-align: center;
-        color: $color-black-pure;
-        margin-bottom: 2rem;
+        color: $color-white;
+        margin-bottom: 4rem;
     }
 }
 
-.info-text {
+.info-text-2 {
     &--main {
         border: solid 4px;
         border-radius: 6px;
         display: inline-block;
         font-size: 2.3rem;
         font-weight: 700;
-        color: $color-black;
+        color: $color-white;
         line-height: 3rem;
         padding: 0 5px;
         margin-bottom: 1.5rem;
+        margin-left: 2rem;
         &--1 {
             border-color: $color-primary-light;
         }
@@ -50,8 +50,8 @@
 
     &--sub {
         font-size: 2rem;
-        color: $color-black;
-        margin-left: 0.5rem;
+        color: $color-white;
+        margin-left: 3.5rem;
     }
     
     &__list {

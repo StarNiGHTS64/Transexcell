@@ -44,7 +44,6 @@
     
     &__logo-box {
         height: 20rem;
-        background-color: blue;
         text-align: center;
         
     }
@@ -63,5 +62,19 @@
         background-color: $color-primary;
 
     }
+}
+
+.section-choice {
+    height: 70rem;
+    background-color: pink;
+}
+
+.section-map {
+    padding: 20rem 0;
+    background-color: $color-tertiary-dark;
+}
+
+.section-contact {
+    padding: 15rem 0;
 }
 
