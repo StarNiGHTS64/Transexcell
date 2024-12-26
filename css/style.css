@@ -68,7 +68,8 @@ body {
 }
 
 .heading-secondary {
-  color: #F4E04D;
+  color: #17141F;
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -139,19 +140,34 @@ body {
 }
 
 .service-box {
-  border-radius: 15px;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 0.5rem 2rem;
 }
-.service-box__heading {
-  padding: 10px 0;
-  background-color: #2A628F;
+.service-box__text {
+  height: 19rem;
+  padding: 2rem;
+  background-color: #FFFFFF;
+}
+.service-box__text--main {
+  color: #333333;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+.service-box__text--sub {
+  font-size: 1.4rem;
 }
 .service-box__picture {
   height: 30rem;
   background-image: url(../img/nat-3.jpg);
   background-size: cover;
   background-position: right;
+}
+.service-box__detail {
+  display: block;
+  background-color: #123524;
+  height: 3px;
+  width: 4rem;
 }
 
 .info-card {
@@ -214,6 +230,39 @@ body {
   margin-bottom: 2rem;
 }
 
+.postal {
+  width: 100%;
+  height: 50rem;
+}
+.postal__content {
+  padding: 1rem;
+  background: linear-gradient(to right bottom, #123524 0%, #123524 7%, #ffb700 7%, #ffb700 30%, #123524 30%, #123524 65%, #ffb700 65%, #ffb700 85%, #123524 85%, #123524 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50rem;
+  width: 114rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+}
+.postal__left {
+  width: 40%;
+  display: table-cell;
+  background-image: url(../img/nat-2.jpg);
+  background-position: right;
+  background-size: cover;
+}
+.postal__right {
+  background-color: #FFFFFF;
+  width: 60%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to right, rgba(42, 98, 143, 0.8), rgba(42, 98, 143, 0.2)), url(../img/nat-1.jpg);
@@ -246,25 +295,25 @@ body {
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 3.5rem;
 }
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 3.5rem) / 2);
 }
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 3.5rem) / 3);
 }
 .row .col-2-of-3 {
-  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
+  width: calc(2 * (100% - 2 * 3.5rem) / 3 + 3.5rem);
 }
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+  width: calc((100% - 3 * 3.5rem) / 4);
 }
 .row .col-2-of-4 {
-  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
+  width: calc(2 * (100% - 3 * 3.5rem) / 4 + 3.5rem);
 }
 .row .col-3-of-4 {
-  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+  width: calc(3 * (100% - 3 * 3.5rem) / 4 + 2 * 3.5rem);
 }
 
 .section-about {
@@ -315,7 +364,7 @@ body {
   transform: translateY(110%);
 }
 .section-divider--1 {
-  background-color: #F4E04D;
+  background-color: #FFB700;
 }
 .section-divider--2 {
   background-color: #123524;

@@ -1,10 +1,23 @@
 .service-box {
-    border-radius: 15px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 .5rem 2rem ;
-    &__heading {
-        padding: 10px 0;
-        background-color: $color-tertiary;
+    &__text {
+        height: 19rem;
+        padding: 2rem;
+        background-color: $color-white-pure;
+
+        &--main {
+            color: #333333;
+            font-weight: 900;
+            padding-bottom: 1.5rem;
+
+            
+        }
+
+        &--sub {
+            font-size: 1.4rem;
+        }
     }
 
     &__picture {
@@ -13,5 +26,12 @@
         background-size: cover;
         background-position: right;
 
+    }
+
+    &__detail {
+        display: block;
+        background-color: $color-primary;
+        height: 3px;
+        width: 4rem;
     }
 }
