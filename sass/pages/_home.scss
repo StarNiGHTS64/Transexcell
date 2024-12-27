@@ -1,11 +1,13 @@
 .section-about {
-    background-color: $color-white-pure;
-    padding: 20rem 0;
+
+    background-size: cover;
+    padding: 15rem 0;
     border-radius: 3px;
     overflow: hidden;
     position: relative;
     
     &__content {
+        
         background-color: $color-white-pure;
         border: 1px solid $color-primary;
         margin: auto;
@@ -29,7 +31,7 @@
 
 .section-services {
     background-color: $color-white-pure;
-    padding: 20rem 0;
+    padding: 15rem 0;
 
 }
 
@@ -62,6 +64,17 @@
         background-color: $color-primary;
 
     }
+
+}
+
+.section-clip {
+    height: 2px;
+    width: 50%;
+    background-color: $color-primary;
+    transform: translate(50%, -30px);
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black-pure, .8);
 }
 
 .section-choice {
@@ -70,11 +83,17 @@
 }
 
 .section-map {
-    padding: 20rem 0;
     background-color: $color-tertiary-dark;
 }
 
 .section-contact {
     padding: 15rem 0;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.8),
+        rgba($color-primary, 0.8)),
+        url(../img/nat-5.jpg);
+    background-size: cover;
+    background-position: right bottom;
 }
 

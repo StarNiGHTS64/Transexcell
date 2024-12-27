@@ -1,11 +1,12 @@
 .postal {
+    animation: moveInLeftLarge 1.5s ease-out;
     width: 100%;
     height: 50rem;
     
     
     &__content {
         padding: 1rem;
-        background: linear-gradient(
+        /*background: linear-gradient(
             to right bottom,
             rgba($color-primary, 1)0%,
             rgba($color-primary, 1)7%,
@@ -17,9 +18,9 @@
             rgba($color-secondary, 1)85%,
             rgba($color-primary, 1)85%,
             rgba($color-primary, 1)100%
-        );
+        );*/
 
-        /*background: linear-gradient(
+        background: linear-gradient(
             135deg,
             rgba($color-primary, 1)0%,
             rgba($color-primary, 1)2.5%,
@@ -101,13 +102,16 @@
             rgba($color-primary, 1)97.5%,
             rgba($color-secondary, 1)97.5%,
             rgba($color-secondary, 1)100%,
-        );*/
+        );
 
-        @include absCenter;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         height: 50rem;
         width: 114rem;
         
-        box-shadow: 0 2rem 4rem rgba($color-black-pure, .2);
+        box-shadow: 0 2rem 4rem rgba($color-black-pure, .9);
         border-radius: 3px;
         display: table;
         overflow: hidden;

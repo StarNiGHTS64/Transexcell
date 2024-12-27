@@ -26,6 +26,18 @@ body {
     transform: translateX(0);
   }
 }
+@keyframes moveInLeftLarge {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -170,6 +182,28 @@ body {
   width: 4rem;
 }
 
+.feature-box {
+  height: 12rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 2rem;
+  background-image: linear-gradient(120deg, #123524 0%, #123524 28%, transparent 28%, transparent 100%);
+}
+.feature-box__icon {
+  width: 30%;
+  font-size: 6rem;
+  text-align: left;
+  display: inline-block;
+  color: #FFB700;
+  transform: translate(10px, -2px);
+}
+.feature-box__text {
+  width: 69%;
+  font-size: 2rem;
+  text-align: justify;
+  display: inline-block;
+  transform: translateY(-5px);
+}
+
 .info-card {
   height: 60rem;
   background-color: #FFFFFF;
@@ -255,6 +289,9 @@ body {
   margin-bottom: 4rem;
 }
 
+.info-text-2 {
+  margin-left: 18rem;
+}
 .info-text-2--main {
   border: solid 4px;
   border-radius: 6px;
@@ -279,7 +316,7 @@ body {
 .info-text-2--sub {
   font-size: 2rem;
   color: #FFFAFA;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
 }
 .info-text-2__list {
   list-style: none;
@@ -291,102 +328,33 @@ body {
 }
 
 .postal {
+  animation: moveInLeftLarge 1.5s ease-out;
   width: 100%;
   height: 50rem;
 }
 .postal__content {
   padding: 1rem;
-  background: linear-gradient(to right bottom, #123524 0%, #123524 7%, #ffb700 7%, #ffb700 30%, #123524 30%, #123524 65%, #ffb700 65%, #ffb700 85%, #123524 85%, #123524 100%);
   /*background: linear-gradient(
-      135deg,
+      to right bottom,
       rgba($color-primary, 1)0%,
-      rgba($color-primary, 1)2.5%,
-      rgba($color-secondary, 1)2.5%,
-      rgba($color-secondary, 1)5%,
-      rgba($color-primary, 1)5%,
-      rgba($color-primary, 1)7.5%,
-      rgba($color-secondary, 1)7.5%,
-      rgba($color-secondary, 1)10%,
-      rgba($color-primary, 1)10%,
-      rgba($color-primary, 1)12.5%,
-      rgba($color-secondary, 1)12.5%,
-      rgba($color-secondary, 1)15%,
-      rgba($color-primary, 1)15%,
-      rgba($color-primary, 1)17.5%,
-      rgba($color-secondary, 1)17.5%,
-      rgba($color-secondary, 1)20%,
-      rgba($color-primary, 1)20%,
-      rgba($color-primary, 1)22.5%,
-      rgba($color-secondary, 1)22.5%,
-      rgba($color-secondary, 1)25%,
-      rgba($color-primary, 1)25%,
-      rgba($color-primary, 1)27.5%,
-      rgba($color-secondary, 1)27.5%,
+      rgba($color-primary, 1)7%,
+      rgba($color-secondary, 1)7%,
       rgba($color-secondary, 1)30%,
       rgba($color-primary, 1)30%,
-      rgba($color-primary, 1)32.5%,
-      rgba($color-secondary, 1)32.5%,
-      rgba($color-secondary, 1)35%,
-      rgba($color-primary, 1)35%,
-      rgba($color-primary, 1)37.5%,
-      rgba($color-secondary, 1)37.5%,
-      rgba($color-secondary, 1)40%,
-      rgba($color-primary, 1)40%,
-      rgba($color-primary, 1)42.5%,
-      rgba($color-secondary, 1)42.5%,
-      rgba($color-secondary, 1)45%,
-      rgba($color-primary, 1)45%,
-      rgba($color-primary, 1)47.5%,
-      rgba($color-secondary, 1)47.5%,
-      rgba($color-secondary, 1)50%,
-      rgba($color-primary, 1)50%,
-      rgba($color-primary, 1)52.5%,
-      rgba($color-secondary, 1)52.5%,
-      rgba($color-secondary, 1)55%,
-      rgba($color-primary, 1)55%,
-      rgba($color-primary, 1)57.5%,
-      rgba($color-secondary, 1)57.5%,
-      rgba($color-secondary, 1)60%,
-      rgba($color-primary, 1)60%,
-      rgba($color-primary, 1)62.5%,
-      rgba($color-secondary, 1)62.5%,
-      rgba($color-secondary, 1)65%,
       rgba($color-primary, 1)65%,
-      rgba($color-primary, 1)67.5%,
-      rgba($color-secondary, 1)67.5%,
-      rgba($color-secondary, 1)70%,
-      rgba($color-primary, 1)70%,
-      rgba($color-primary, 1)72.5%,
-      rgba($color-secondary, 1)72.5%,
-      rgba($color-secondary, 1)75%,
-      rgba($color-primary, 1)75%,
-      rgba($color-primary, 1)77.5%,
-      rgba($color-secondary, 1)77.5%,
-      rgba($color-secondary, 1)80%,
-      rgba($color-primary, 1)80%,
-      rgba($color-primary, 1)82.5%,
-      rgba($color-secondary, 1)82.5%,
+      rgba($color-secondary, 1)65%,
       rgba($color-secondary, 1)85%,
       rgba($color-primary, 1)85%,
-      rgba($color-primary, 1)87.5%,
-      rgba($color-secondary, 1)87.5%,
-      rgba($color-secondary, 1)90%,
-      rgba($color-primary, 1)90%,
-      rgba($color-primary, 1)92.5%,
-      rgba($color-secondary, 1)92.5%,
-      rgba($color-secondary, 1)95%,
-      rgba($color-primary, 1)95%,
-      rgba($color-primary, 1)97.5%,
-      rgba($color-secondary, 1)97.5%,
-      rgba($color-secondary, 1)100%,
+      rgba($color-primary, 1)100%
   );*/
+  background: linear-gradient(135deg, #123524 0%, #123524 2.5%, #ffb700 2.5%, #ffb700 5%, #123524 5%, #123524 7.5%, #ffb700 7.5%, #ffb700 10%, #123524 10%, #123524 12.5%, #ffb700 12.5%, #ffb700 15%, #123524 15%, #123524 17.5%, #ffb700 17.5%, #ffb700 20%, #123524 20%, #123524 22.5%, #ffb700 22.5%, #ffb700 25%, #123524 25%, #123524 27.5%, #ffb700 27.5%, #ffb700 30%, #123524 30%, #123524 32.5%, #ffb700 32.5%, #ffb700 35%, #123524 35%, #123524 37.5%, #ffb700 37.5%, #ffb700 40%, #123524 40%, #123524 42.5%, #ffb700 42.5%, #ffb700 45%, #123524 45%, #123524 47.5%, #ffb700 47.5%, #ffb700 50%, #123524 50%, #123524 52.5%, #ffb700 52.5%, #ffb700 55%, #123524 55%, #123524 57.5%, #ffb700 57.5%, #ffb700 60%, #123524 60%, #123524 62.5%, #ffb700 62.5%, #ffb700 65%, #123524 65%, #123524 67.5%, #ffb700 67.5%, #ffb700 70%, #123524 70%, #123524 72.5%, #ffb700 72.5%, #ffb700 75%, #123524 75%, #123524 77.5%, #ffb700 77.5%, #ffb700 80%, #123524 80%, #123524 82.5%, #ffb700 82.5%, #ffb700 85%, #123524 85%, #123524 87.5%, #ffb700 87.5%, #ffb700 90%, #123524 90%, #123524 92.5%, #ffb700 92.5%, #ffb700 95%, #123524 95%, #123524 97.5%, #ffb700 97.5%, #ffb700 100%);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 50rem;
   width: 114rem;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.9);
   border-radius: 3px;
   display: table;
   overflow: hidden;
@@ -413,11 +381,36 @@ body {
 
 .contact-info {
   height: 60rem;
-  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, transparent 50%), url(../img/nat-5.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, rgba(18, 53, 36, 0.5) 50%), url(../img/nat-5.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   background-position: right bottom;
+  padding: 4rem 6rem;
+}
+.contact-info__left {
+  width: 55%;
+}
+.contact-info__header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #123524;
+}
+.contact-info__text {
+  font-size: 2rem;
+  color: #000000;
+}
+.contact-info__contact {
+  margin-bottom: 1rem;
+}
+.contact-info__hour--main {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.contact-info__hour--sub {
+  margin-bottom: 1rem;
 }
 
 .header {
@@ -441,7 +434,7 @@ body {
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 .row::after {
   content: "";
@@ -473,9 +466,70 @@ body {
   width: calc(3 * (100% - 3 * 3.5rem) / 4 + 2 * 3.5rem);
 }
 
+.footer {
+  background-color: #333333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #F7F7F7;
+}
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.footer__logo {
+  width: 40rem;
+  height: auto;
+}
+.footer__navigation {
+  border-top: 1px solid #777777;
+  padding-top: 2rem;
+  display: inline-block;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer__link:link, .footer__link:visited {
+  color: #F7F7F7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+  background-color: #333333;
+}
+.footer__link:hover, .footer__link:active {
+  color: #FFB700;
+  box-shadow: 0 1rem 2rem rgba(23, 20, 31, 0.4);
+  transform: rotate(5deg) scale(1.3);
+}
+.footer__link--rdr:link, .footer__link--rdr:visited {
+  color: #F7F7F7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+  background-color: #333333;
+}
+.footer__link--rdr:hover, .footer__link--rdr:active {
+  color: #b3064c;
+  box-shadow: 0 1rem 2rem rgba(23, 20, 31, 0.4);
+  transform: rotate(5deg) scale(1.3);
+}
+.footer__copyright {
+  border-top: 1px solid #777777;
+  padding-top: 2rem;
+  width: 80%;
+  float: right;
+}
+
 .section-about {
-  background-color: #FFFFFF;
-  padding: 20rem 0;
+  background-size: cover;
+  padding: 15rem 0;
   border-radius: 3px;
   overflow: hidden;
   position: relative;
@@ -500,7 +554,7 @@ body {
 
 .section-services {
   background-color: #FFFFFF;
-  padding: 20rem 0;
+  padding: 15rem 0;
 }
 
 .section-coverage {
@@ -526,18 +580,30 @@ body {
   background-color: #123524;
 }
 
+.section-clip {
+  height: 2px;
+  width: 50%;
+  background-color: #123524;
+  transform: translate(50%, -30px);
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+}
+
 .section-choice {
   height: 70rem;
   background-color: pink;
 }
 
 .section-map {
-  padding: 20rem 0;
   background-color: #2C3694;
 }
 
 .section-contact {
   padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba(18, 53, 36, 0.8), rgba(18, 53, 36, 0.8)), url(../img/nat-5.jpg);
+  background-size: cover;
+  background-position: right bottom;
 }
 
 /*# sourceMappingURL=style.css.map */

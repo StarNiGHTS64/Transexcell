@@ -26,6 +26,7 @@
 }
 
 .info-text-2 {
+    margin-left: 18rem;
     &--main {
         border: solid 4px;
         border-radius: 6px;
@@ -51,7 +52,7 @@
     &--sub {
         font-size: 2rem;
         color: $color-white;
-        margin-left: 3.5rem;
+        margin-left: 3rem;
     }
     
     &__list {
