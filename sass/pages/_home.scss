@@ -1,7 +1,7 @@
 .section-about {
-
+    background-color: #161525;
     background-size: cover;
-    padding: 15rem 0;
+    padding: 17.5rem 0;
     border-radius: 3px;
     overflow: hidden;
     position: relative;
@@ -36,7 +36,15 @@
 }
 
 .section-coverage {
-    background-color: $color-white-pure;
+    
+    background-image: linear-gradient(
+        135deg,
+        rgba($color-tertiary-dark, 1) 0%,
+        rgba(#161525, 1) 7%,
+        rgba($color-white-pure, 1) 7%,
+        rgba($color-white-pure, 1) 93%,
+        rgba(#161525, 1) 93%,
+        rgba($color-tertiary-dark, 1) 100%,);
     padding: 20rem 0;
 
 }
@@ -79,15 +87,37 @@
 
 .section-choice {
     height: 70rem;
-    background-color: pink;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-black-pure, 0.65) 0%,
+        rgba($color-black-pure, 0.85) 40%,
+        rgba($color-black-pure, 0.95) 50%,
+        rgba($color-white-pure, 0.85) 60%,
+        rgba($color-black-pure, 0.65) 100%),
+        url(../img/nat-7.jpg);
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 22rem 0 0 0;
+    }
+
+    &__logo-box {
+
+    }
+
+    &__logo {
+        
+    }
 }
 
 .section-map {
-    background-color: $color-tertiary-dark;
+    background-color: #161525;
+    padding: 7rem 0;
 }
 
 .section-contact {
-    padding: 15rem 0;
+    padding: 20rem 0;
     background-image: linear-gradient(
         to right,
         rgba($color-primary, 0.8),

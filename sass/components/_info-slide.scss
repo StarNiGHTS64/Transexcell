@@ -1,17 +1,18 @@
 .info-slide {
-    height: 60rem;
+    height: 70rem;
     background-color: $color-primary;
     &--left {
         width: 50%;
         height: 100%;
         display: inline-block;
-        transform: translateY(-15rem);
+        transform: translateY(-18rem);
         padding-left: 2rem;
     }
 
     &--right {
         width: 49.5%;
         height: 100%;
+        background-color: $color-white-pure;
         background-image: url(../img/nat-4.jpg);
         background-size: cover;
         background-position: center;
