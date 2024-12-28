@@ -15,7 +15,7 @@ body {
 
     &--main {
         display: block;
-        font-size: 8rem;
+        font-size: 10rem;
         font-weight: 400;
         letter-spacing: .5rem;
 
@@ -25,7 +25,7 @@ body {
     &--sub {
         text-transform: uppercase;
         display: block;
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 700;
 
         animation: moveInRight 2s ease-out;
@@ -56,7 +56,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: $color-secondary;
+    color: #161525;
     display: inline-block;
 }
 

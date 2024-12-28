@@ -1,0 +1,70 @@
+.navigation {
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+
+    &__nav {
+        backface-visibility: hidden;
+        background-color: $color-grey-light-1;
+        height: 7rem;
+        width: 65vw;
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1500;
+        opacity: .85;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 1rem 0;
+        float: left;
+        
+        &:hover,
+        &:active {
+            background-color: $color-primary;
+        }
+        transition: all .3s;
+        margin-left: 18rem;
+        &:not(:first-child){
+            margin-left: 5rem;
+        }
+        
+    }
+
+    &__logo-box {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__logo {
+        width: 14rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            color: $color-primary;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-white-pure;
+        }
+        transition: all .3s;
+    }
+}

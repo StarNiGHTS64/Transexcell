@@ -66,7 +66,7 @@ body {
 }
 .heading-primary--main {
   display: block;
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
   animation: moveInLeft 2s ease-out;
@@ -74,7 +74,7 @@ body {
 .heading-primary--sub {
   text-transform: uppercase;
   display: block;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   animation: moveInRight 2s ease-out;
 }
@@ -102,7 +102,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FFB700;
+  color: #161525;
   display: inline-block;
 }
 
@@ -420,6 +420,65 @@ body {
   margin-bottom: 1rem;
 }
 
+.navigation {
+  height: 7rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.navigation__nav {
+  backface-visibility: hidden;
+  background-color: #F7F7F7;
+  height: 7rem;
+  width: 65vw;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1500;
+  opacity: 0.85;
+}
+.navigation__list {
+  list-style: none;
+  text-align: center;
+}
+.navigation__item {
+  margin: 1rem 0;
+  float: left;
+  transition: all 0.3s;
+  margin-left: 18rem;
+}
+.navigation__item:hover, .navigation__item:active {
+  background-color: #123524;
+}
+.navigation__item:not(:first-child) {
+  margin-left: 5rem;
+}
+.navigation__logo-box {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.navigation__logo {
+  width: 14rem;
+}
+.navigation__link {
+  transition: all 0.3s;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  color: #123524;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation__link:hover, .navigation__link:active {
+  color: #FFFFFF;
+}
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to right, rgba(42, 98, 143, 0.7), rgba(18, 53, 36, 0.2)), url(../img/nat-1.jpg);
@@ -568,7 +627,7 @@ body {
 
 .section-coverage {
   background-image: linear-gradient(135deg, #2c3694 0%, #161525 7%, white 7%, white 93%, #161525 93%, #2c3694 100%);
-  padding: 20rem 0;
+  padding: 12rem 0;
 }
 
 .section-divider {
@@ -601,12 +660,15 @@ body {
 
 .section-choice {
   height: 70rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 40%, rgba(0, 0, 0, 0.95) 50%, rgba(255, 255, 255, 0.85) 60%, rgba(0, 0, 0, 0.65) 100%), url(../img/nat-7.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 40%, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.85) 60%, rgba(0, 0, 0, 0.65) 100%), url(../img/nat-7.jpg);
 }
 .section-choice__text {
   text-align: center;
   text-transform: uppercase;
-  padding: 22rem 0 0 0;
+  padding: 14rem 0 0 0;
+}
+.section-choice__logo-box {
+  margin-top: 8rem;
 }
 .section-map {
   background-color: #161525;

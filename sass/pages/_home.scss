@@ -45,7 +45,7 @@
         rgba($color-white-pure, 1) 93%,
         rgba(#161525, 1) 93%,
         rgba($color-tertiary-dark, 1) 100%,);
-    padding: 20rem 0;
+    padding: 12rem 0;
 
 }
 
@@ -91,7 +91,7 @@
         to bottom,
         rgba($color-black-pure, 0.65) 0%,
         rgba($color-black-pure, 0.85) 40%,
-        rgba($color-black-pure, 0.95) 50%,
+        rgba($color-white-pure, 0.95) 50%,
         rgba($color-white-pure, 0.85) 60%,
         rgba($color-black-pure, 0.65) 100%),
         url(../img/nat-7.jpg);
@@ -99,11 +99,11 @@
     &__text {
         text-align: center;
         text-transform: uppercase;
-        padding: 22rem 0 0 0;
+        padding: 14rem 0 0 0;
     }
 
     &__logo-box {
-
+        margin-top: 8rem;
     }
 
     &__logo {
