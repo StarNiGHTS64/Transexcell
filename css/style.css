@@ -19,9 +19,9 @@ body {
     opacity: 0;
     transform: translateX(-100px);
   }
-  80% {
-    transform: translateX(10px);
-  }
+  /*80% {
+      transform: translateX(10px);
+  }*/
   100% {
     transform: translateX(0);
   }
@@ -43,9 +43,9 @@ body {
     opacity: 0;
     transform: translateX(100px);
   }
-  80% {
-    transform: translateX(-10px);
-  }
+  /*80% {
+      transform: translateX(-10px);
+  }*/
   100% {
     transform: translateX(0);
   }
@@ -205,9 +205,10 @@ body {
 .feature-box__text {
   width: 69%;
   font-size: 2rem;
-  text-align: justify;
+  text-align: left;
   display: inline-block;
   transform: translateY(-5px);
+  padding-left: 1rem;
 }
 
 .info-card {
@@ -382,13 +383,13 @@ body {
 }
 
 .map {
-  height: 55rem;
+  height: 60rem;
   width: 100%;
 }
 
 .contact-info {
   height: 60rem;
-  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, rgba(18, 53, 36, 0.5) 50%), url(../img/nat-5.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, rgba(0, 0, 0, 0.5) 50%), url(../img/nat-5.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -429,7 +430,7 @@ body {
 .navigation__nav {
   backface-visibility: hidden;
   background-color: #F7F7F7;
-  height: 7rem;
+  height: 8rem;
   width: 65vw;
   position: fixed;
   top: 40px;
@@ -443,15 +444,15 @@ body {
   text-align: center;
 }
 .navigation__item {
-  margin: 1rem 0;
-  float: left;
+  margin: 1.4rem 0;
+  float: right;
   transition: all 0.3s;
-  margin-left: 18rem;
+  margin-right: 0rem;
 }
 .navigation__item:hover, .navigation__item:active {
   background-color: #123524;
 }
-.navigation__item:not(:first-child) {
+.navigation__item:not(:last-child) {
   margin-left: 5rem;
 }
 .navigation__logo-box {
@@ -461,7 +462,9 @@ body {
   left: 20px;
 }
 .navigation__logo {
-  width: 14rem;
+  width: 18rem;
+  margin-top: -0.4rem;
+  margin-left: -2rem;
 }
 .navigation__link {
   transition: all 0.3s;
@@ -626,7 +629,7 @@ body {
 }
 
 .section-coverage {
-  background-image: linear-gradient(135deg, #2c3694 0%, #161525 7%, white 7%, white 93%, #161525 93%, #2c3694 100%);
+  background-color: #161525;
   padding: 12rem 0;
 }
 
@@ -672,12 +675,12 @@ body {
 }
 .section-map {
   background-color: #161525;
-  padding: 7rem 0;
+  padding: 12rem 0;
 }
 
 .section-contact {
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(18, 53, 36, 0.8), rgba(18, 53, 36, 0.8)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right, rgba(22, 21, 37, 0.85), rgba(22, 21, 37, 0.85)), url(../img/nat-5.jpg);
   background-size: cover;
   background-position: right bottom;
 }

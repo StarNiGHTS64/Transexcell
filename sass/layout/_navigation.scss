@@ -7,7 +7,7 @@
     &__nav {
         backface-visibility: hidden;
         background-color: $color-grey-light-1;
-        height: 7rem;
+        height: 8rem;
         width: 65vw;
         position: fixed;
         top: 40px;
@@ -23,16 +23,16 @@
     }
 
     &__item {
-        margin: 1rem 0;
-        float: left;
+        margin: 1.4rem 0;
+        float: right;
         
         &:hover,
         &:active {
             background-color: $color-primary;
         }
         transition: all .3s;
-        margin-left: 18rem;
-        &:not(:first-child){
+        margin-right: 0rem;
+        &:not(:last-child){
             margin-left: 5rem;
         }
         
@@ -46,7 +46,9 @@
     }
 
     &__logo {
-        width: 14rem;
+        width: 18rem;
+        margin-top: -.4rem;
+        margin-left: -2rem;
     }
 
     &__link {
