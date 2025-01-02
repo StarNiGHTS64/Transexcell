@@ -69,34 +69,41 @@
 }
 
 .section-clip {
-    height: 2px;
     width: 50%;
-    background-color: $color-primary;
     transform: translate(50%, -30px);
     margin-top: 10rem;
     margin-bottom: 5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black-pure, .8);
+
+    &--1 {
+        height: 2px;
+        background-color: $color-primary;
+    }
+
+    &--2 {
+        height: 1px;
+        background-color: $color-secondary;
+    }
 }
 
 .section-choice {
     height: 70rem;
     background-image: linear-gradient(
         to bottom,
-        rgba($color-black-pure, 0.65) 0%,
-        rgba($color-black-pure, 0.85) 40%,
-        rgba($color-white-pure, 0.95) 50%,
-        rgba($color-white-pure, 0.85) 60%,
+        rgba($color-white-pure, 0.65) 0%,
+        rgba($color-white-pure, 0.65) 50%,
+        rgba($color-black-pure, 0.65) 50%,
         rgba($color-black-pure, 0.65) 100%),
         url(../img/nat-7.jpg);
 
     &__text {
         text-align: center;
         text-transform: uppercase;
-        padding: 14rem 0 0 0;
+        padding: 5rem 0
     }
 
     &__logo-box {
-        margin-top: 8rem;
+        margin-bottom: 10rem;
     }
 
     &__logo {
