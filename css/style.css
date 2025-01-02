@@ -94,6 +94,7 @@ body {
   text-transform: uppercase;
   display: block;
   background-image: linear-gradient(to right, #47953B, #223921);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -648,7 +649,7 @@ body {
   width: 50%;
   transform: translate(50%, -30px);
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
 }
 .section-clip--1 {
@@ -672,6 +673,7 @@ body {
 .section-choice__logo-box {
   margin-bottom: 10rem;
 }
+
 .section-map {
   background-color: #161525;
   padding: 12rem 0;
