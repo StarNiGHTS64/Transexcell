@@ -13,12 +13,13 @@
 
     &__content {
         @include absCenter;
-        height: 65rem;
+        height: 70rem;
         width: 75%;
+        padding: 4rem 6rem;
         background-color: $color-white-pure;
         box-shadow: 0 2rem 4rem rgba($color-black-pure, $alpha: .2);
         border-radius: 3px;
-        overflow: hidden;
+        overflow: scroll;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .4s .2s
@@ -41,7 +42,7 @@
             position: absolute;
             top: 2.5rem;
             right: 2.5rem;
-            font-size: 3rem;
+            font-size: 5rem;
             text-decoration: none;
             display: inline-block;
             transition: all .2s;
