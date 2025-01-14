@@ -4,7 +4,7 @@
         to right,
         rgba($color-tertiary, 0.70),
         rgba($color-primary, 0.20)),
-        url(../img/nat-1.jpg);
+        url(../img/nat-1X.jpg);
     background-size: cover;
     background-position: bottom;
     position: relative;
@@ -16,5 +16,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+    
+    &__logo-box {
+
     }
 }

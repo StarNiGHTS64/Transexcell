@@ -65,7 +65,7 @@ body {
   margin-bottom: 6rem;
 }
 .heading-primary--main {
-  display: block;
+  display: none;
   font-size: 10rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
@@ -73,7 +73,7 @@ body {
 }
 .heading-primary--sub {
   text-transform: uppercase;
-  display: block;
+  display: none;
   font-size: 6rem;
   font-weight: 700;
   animation: moveInRight 2s ease-out;
@@ -202,9 +202,21 @@ body {
 .service-box__text--sub {
   font-size: 1.6rem;
 }
-.service-box__picture {
+.service-box__picture--1 {
   height: 30rem;
-  background-image: url(../img/nat-3.jpg);
+  background-image: url(../img/nat-3X.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.service-box__picture--2 {
+  height: 30rem;
+  background-image: url(../img/nat-3Z.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.service-box__picture--3 {
+  height: 30rem;
+  background-image: url(../img/nat-3Y.jpg);
   background-size: cover;
   background-position: right;
 }
@@ -258,8 +270,9 @@ body {
 .info-card--right {
   width: 49.5%;
   height: 100%;
-  background-image: url(../img/nat-4.jpg);
-  background-size: cover;
+  background-image: url(../img/mapa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
@@ -270,8 +283,9 @@ body {
 }
 
 .info-text--main {
-  border: solid 4px;
-  border-radius: 6px;
+  border-bottom: solid 4px;
+  border-left: solid 4px;
+  border-radius: 2px;
   display: inline-block;
   font-size: 2.3rem;
   font-weight: 700;
@@ -381,16 +395,16 @@ body {
 .postal__left {
   width: 40%;
   display: table-cell;
-  background-image: url(../img/nat-2.jpg);
-  background-position: right;
+  background-image: url(../img/nat-2Y.jpg);
+  background-position: center;
   background-size: cover;
 }
 .postal__right {
   background-color: #FFFFFF;
   width: 60%;
   display: table-cell;
-  vertical-align: middle;
-  padding: 3rem 5rem;
+  vertical-align: top;
+  padding: 8rem 5rem;
 }
 
 .map {
@@ -400,11 +414,11 @@ body {
 
 .contact-info {
   height: 60rem;
-  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, rgba(0, 0, 0, 0.5) 50%), url(../img/nat-5.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 250, 250, 0.9) 0%, rgba(255, 250, 250, 0.9) 50%, transparent 50%), url(../img/nat-5Y.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  background-position: right bottom;
+  background-position: center right;
   padding: 4rem 6rem;
 }
 .contact-info__left {
@@ -548,7 +562,7 @@ body {
 
 .header {
   height: 80vh;
-  background-image: linear-gradient(to right, rgba(42, 98, 143, 0.7), rgba(18, 53, 36, 0.2)), url(../img/nat-1.jpg);
+  background-image: linear-gradient(to right, rgba(42, 98, 143, 0.7), rgba(18, 53, 36, 0.2)), url(../img/nat-1X.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -561,7 +575,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -734,6 +747,7 @@ body {
 
 .section-choice {
   height: 70rem;
+  background-size: fit;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 50%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.65) 100%), url(../img/nat-7.jpg);
 }
 .section-choice__text {
@@ -752,7 +766,7 @@ body {
 
 .section-contact {
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(22, 21, 37, 0.85), rgba(22, 21, 37, 0.85)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right, rgba(22, 21, 37, 0.85), rgba(22, 21, 37, 0.85)), url(../img/nat-1X.jpg);
   background-size: cover;
   background-position: right bottom;
 }

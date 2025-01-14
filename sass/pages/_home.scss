@@ -88,6 +88,7 @@
 
 .section-choice {
     height: 70rem;
+    background-size: fit;
     background-image: linear-gradient(
         to bottom,
         rgba($color-white-pure, 0.65) 0%,
@@ -119,7 +120,7 @@
         to right,
         rgba(#161525, 0.85),
         rgba(#161525, 0.85)),
-        url(../img/nat-5.jpg);
+        url(../img/nat-1X.jpg);
     background-size: cover;
     background-position: right bottom;
 }

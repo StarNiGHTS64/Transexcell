@@ -19,12 +19,25 @@
         }
     }
 
-    &__picture {
+    &__picture--1 {
         height: 30rem;
-        background-image: url(../img/nat-3.jpg);
+        background-image: url(../img/nat-3X.jpg);
         background-size: cover;
         background-position: right;
+    }
 
+    &__picture--2 {
+        height: 30rem;
+        background-image: url(../img/nat-3Z.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    &__picture--3 {
+        height: 30rem;
+        background-image: url(../img/nat-3Y.jpg);
+        background-size: cover;
+        background-position: right;
     }
 
     &__detail {

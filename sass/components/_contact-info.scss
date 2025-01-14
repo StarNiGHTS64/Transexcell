@@ -4,12 +4,12 @@
         105deg,
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 50%,
-        rgba(transparent, .5) 50%),
-        url(../img/nat-5.jpg);
+        transparent 50%),
+        url(../img/nat-5Y.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black-pure, .2);
-    background-position: right bottom;
+    background-position: center right;
     padding: 4rem 6rem;
 
     &__left {

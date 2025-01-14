@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
         
         <title>Transecell | Transportes de Excelencia</title>
     </head>
@@ -22,11 +22,11 @@
                     </picture>
                 </div>
                 <ul class="navigation__list">
-                    <li class="navigation__item"> <a href="" class="navigation__link">Contacto</a></li>
-                    <li class="navigation__item"> <a href="" class="navigation__link">Cobertura</a></li>
-                    <li class="navigation__item"> <a href="" class="navigation__link">Servicios</a></li>
-                    <li class="navigation__item"> <a href="" class="navigation__link">Nosotros</a></li>
-                    <li class="navigation__item"> <a href="" class="navigation__link">Inicio</a></li>
+                    <li class="navigation__item"> <a href="#contacto" class="navigation__link">Contacto</a></li>
+                    <li class="navigation__item"> <a href="#cobertura" class="navigation__link">Cobertura</a></li>
+                    <li class="navigation__item"> <a href="#servicios" class="navigation__link">Servicios</a></li>
+                    <li class="navigation__item"> <a href="#nosotros" class="navigation__link">Nosotros</a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link">Inicio</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,11 +37,12 @@
                     <span class="heading-primary--main animate">Transexcell</span>
                     <span class="heading-primary--sub animate">Transportacion De Excelencia</span>
                 </h1>
+                <img src="/img/Logo-Type-B.png" alt="">
             </div>
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="nosotros">
                 <div class="postal animate">
                     <div class="postal__content">
                         <div class="postal__left">
@@ -81,14 +82,14 @@
                 </div>
             </div>
 
-            <section class="section-services">
+            <section class="section-services" id="servicios">
                 <h3 class="heading-tertiary u-center-text u-margin-bottom-big">
                     Nuestros Servicios
                 </h3>
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="service-box">
-                            <div class="service-box__picture"></div>
+                            <div class="service-box__picture--1"></div>
                             <div class="service-box__text">
                                 <div class="service-box__detail"></div>
                                 <h2 class="heading-secondary service-box__text--main">
@@ -101,7 +102,7 @@
                     </div>
                     <div class="col-1-of-3">
                         <div class="service-box">
-                            <div class="service-box__picture"></div>
+                            <div class="service-box__picture--2"></div>
                             <div class="service-box__text">
                                 <div class="service-box__detail"></div>
                                 <h2 class="heading-secondary service-box__text--main">
@@ -114,7 +115,7 @@
                     </div>
                     <div class="col-1-of-3">
                         <div class="service-box">
-                            <div class="service-box__picture"></div>
+                            <div class="service-box__picture--3"></div>
                             <div class="service-box__text">
                                 <div class="service-box__detail"></div>
                                 <h2 class="heading-secondary service-box__text--main">
@@ -196,7 +197,7 @@
                 </div>
             </div>
 
-            <section class="section-coverage">
+            <section class="section-coverage" id="cobertura">
 
                 <div class="section-clip section-clip--2"></div>
 
@@ -230,7 +231,7 @@
                                     <div class="info-text--main info-text--main--3">
                                         <h4>Ruta Centro</h4>
                                     </div>
-                                    <p class="info-text--sub">Guadalajara, Leon, Queretaro, San Luis Potosi, Mexico y Guanajuato</p>
+                                    <p class="info-text--sub">Guadalajara, Leon, Guanajuato Queretaro, San Luis Potosi y Ciudad de México </p>
                                 </div>
                                 
                             </div>
@@ -262,7 +263,7 @@
                     </div>
             </section>
 
-            <section class="section-contact" id="contact">
+            <section class="section-contact" id="contacto">
                 <div class="row">
                     <div class="contact-info">
                         <div class="contact-info__content">
@@ -308,7 +309,7 @@
 
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer__logo-box">
 
                 <picture class="footer__logo">
@@ -319,10 +320,10 @@
             <div class="row">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Nosotros</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Servicios</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Cobertura</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
+                            <li class="footer__item"><a href="#nosotros" class="footer__link">Nosotros</a></li>
+                            <li class="footer__item"><a href="#servicios" class="footer__link">Servicios</a></li>
+                            <li class="footer__item"><a href="#cobertura" class="footer__link">Cobertura</a></li>
+                            <li class="footer__item"><a href="#contacto" class="footer__link">Contacto</a></li>
                             <li class="footer__item"><a href="#popup" class="footer__link">Aviso de Privacidad</a></li>
                         </ul>
                     </div>
@@ -334,18 +335,20 @@
 
         <div class="popup" id="popup">
             <div class="popup__content">
-                <a href="#" class="popup__close">&times;</a>
+                <a href="#footer" class="popup__close">&times;</a>
                 <h4 class="privacy-header">Aviso de Privacidad</h4>
                 <p class="privacy-paragraph">Juan Pedro Becerra Becerra mejor conocido como Transportacion de Excelencia, con domicilio en Av. Tecnológico 101, Col. Francisco Sarabia, CP: 78437 Soledad de Graciano Sanchez y portal de internet www.transexcell.com.mx, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
 
                 <p class="privacy-point">¿Para qué fines utilizaremos sus datos personales?</p>
                 <p class="privacy-paragraph">Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:</p>
+                <p class="privacy-paragraph">- Cookies</p>
 
                 <p class="privacy-point">¿Qué datos personales utilizaremos para estos fines?</p>
                 <p class="privacy-paragraph">Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:</p>
+                <p class="privacy-paragraph">- Datos de identificacion y contacto</p>
 
                 <p class="privacy-point">¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso o ejercer la revocación de consentimiento?</p>
-                <p class="privacy-paragraph">les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.</p>
+                <p class="privacy-paragraph">Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.</p>
 
                 <p class="privacy-point">¿En cuántos días le daremos respuesta a su solicitud?</p>
                 <p class="privacy-paragraph">5 días</p>
@@ -355,9 +358,11 @@
 
                 <p class="privacy-point">El uso de tecnologías de rastreo en nuestro portal de internet</p>
                 <p class="privacy-paragraph">Le informamos que en nuestra página de internet utilizamos cookies, web beacons u otras tecnologías, a través de las cuales es posible monitorear su comportamiento como usuario de internet, así como brindarle un mejor servicio y experiencia al navegar en nuestra página. Los datos personales que obtenemos de estas tecnologías de rastreo son los siguientes:</p>
+                <p class="privacy-paragraph">- Región en la que se encuentra el usuario, Tipo de navegador del usuario</p>
 
                 <p class="privacy-point">¿Cómo puede conocer los cambios en este aviso de privacidad?</p>
                 <p class="privacy-paragraph">El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantener actualizado este aviso de privacidad sobre los cambios que pueda sufrir y siempre podrá consultar las actualizaciones que existan en el sitio web www.transexcell.com.mx.</p>
+                <p class="privacy-paragraph">Última actualización de este aviso de privacidad: 14/01/2025</p>
             </div>
         </div>
 
